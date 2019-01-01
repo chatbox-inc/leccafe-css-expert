@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vuepress dev page -c .cache",
-    "build": "vuepress build page -c .cache"
+    "dev": "vuepress dev pages -c .cache",
+    "build": "vuepress build pages -c .cache"
   },
   "repository": {
     "type": "git",
