@@ -1,2 +1,0 @@
-build:
-	vuepress build page

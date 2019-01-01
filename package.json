@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/lec-cafe/book_jquery#readme",
   "dependencies": {
-    "vuepress": "^0.14.8"
+    "vuepress": "^1.0.0-alpha.30"
   },
   "devDependencies": {
     "yarn": "^1.12.3"
