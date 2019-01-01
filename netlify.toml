@@ -8,7 +8,7 @@
 [build.environment]
 # Production context: All deploys to the main
 # repository branch will inherit these settings.
-NODE_VERSION="v10.9.0"
+NODE_VERSION="v10.15.0"
 NPM_VERSION="6.2.0"
 [context.production]
 
