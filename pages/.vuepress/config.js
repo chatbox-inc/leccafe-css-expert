@@ -1,4 +1,5 @@
 module.exports = {
+    theme: "lec-cafe",
     title: '実践Webコーディング',
     description: 'HTML/CSS を使った Web 制作技術について、現場で使えるテクニックを紹介します。',
     head: [

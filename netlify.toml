@@ -3,7 +3,7 @@
 
 [build]
   publish = "page/.vuepress/dist"
-  command = "npm run dev"
+  command = "npm run build"
 
 [build.environment]
 # Production context: All deploys to the main
