@@ -24,9 +24,9 @@ module.exports = {
             { text: 'Lec Café', link: 'https://leccafe.connpass.com/' },
         ],
         sidebar: [
-            '/1.コンテナとレイアウト.md',
-            '/2.レスポンシブデザイン.md',
-            '/3.クラス名の管理.md',
+            '/コンテナとレイアウト',
+            '/レスポンシブデザイン',
+            '/クラス名の管理',
         ],
     }
 }

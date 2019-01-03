@@ -1,6 +1,5 @@
 ---
 title: 実践Webコーディング
-permalink: /
 ---
 # 実践Webコーディング
 
