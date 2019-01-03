@@ -13,6 +13,7 @@
                     <label>Message: </label>
                 </p>
                 <textarea name="message"></textarea>
+                <input type="hidden" v-model="href">
                 <p>
                     <button type="submit">Send</button>
                 </p>
@@ -26,7 +27,13 @@ export default {
     name: "ContactBar",
     data() {
         return {
-            active: true
+            active: false,
+            href: null
+        }
+    },
+    watch:{
+        $route (to, from){
+            this.href = location.href;
         }
     },
     computed: {
@@ -35,7 +42,10 @@ export default {
                 "contact" : true,
                 "active": this.active
             }
-        }
+        },
+    },
+    mounted(){
+        this.href = location.href;
     },
     methods:{
         togglePanel(){
