@@ -51,7 +51,7 @@
         slot="bottom"
       />
     </Page>
-    <Contact/>
+    <!--<Contact/>-->
   </div>
 </template>
 
