@@ -25,7 +25,7 @@ export default ({
             INIT_POSTS: firebaseAction(({ bindFirebaseRef }) => {
                 bindFirebaseRef('posts', postRef(), {
                     readyCallback(){
-                        console.log("hgoehoge")
+                        // do something
                     }
                 })
             }),

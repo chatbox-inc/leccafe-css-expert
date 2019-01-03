@@ -2,7 +2,7 @@
   <div class="page">
     <slot name="top"/>
 
-    <Content/>
+    <Content :custom="false"/>
 
     <div class="page-edit">
       <div
@@ -58,20 +58,20 @@
     </div>
 
     <slot name="bottom"/>
-
-    <div class="cartain" v-if="false"/>
   </div>
 </template>
 
 <script>
-import { resolvePage, normalize, outboundRE, endingSlashRE } from '../util'
+import { resolvePage, normalize, outboundRE, endingSlashRE } from '../layouts/util'
 
 export default {
   props: ['sidebarItems'],
 
   computed: {
     lastUpdated () {
-      return this.$page.lastUpdated
+      if (this.$page.lastUpdated) {
+        return new Date(this.$page.lastUpdated).toLocaleString(this.$lang)
+      }
     },
 
     lastUpdatedText () {
@@ -187,7 +187,7 @@ function find (page, items, offset) {
   })
   for (let i = 0; i < res.length; i++) {
     const cur = res[i]
-    if (cur.type === 'page' && cur.path === decodeURIComponent(page.path)) {
+    if (cur.type === 'page' && cur.path === page.path) {
       return res[i + offset]
     }
   }
@@ -195,6 +195,7 @@ function find (page, items, offset) {
 </script>
 
 <style lang="stylus">
+@import '~@app/style/config'
 @require '../styles/wrapper.styl'
 
 .page
@@ -232,15 +233,6 @@ function find (page, items, offset) {
     overflow auto // clear float
   .next
     float right
-
-.cartain
-  background linear-gradient(transparent, white 40%);
-  position fixed
-  width 100%
-  height 100vh
-  top 0vw
-  right 0
-
 
 @media (max-width: $MQMobile)
   .page-edit

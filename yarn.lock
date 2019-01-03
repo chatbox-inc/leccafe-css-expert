@@ -919,6 +919,13 @@
     markdown-it-table-of-contents "^0.4.0"
     prismjs "^1.13.0"
 
+"@vuepress/plugin-active-header-links@^1.0.0-alpha.0":
+  version "1.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-active-header-links/-/plugin-active-header-links-1.0.0-alpha.0.tgz#aa127fb5bd5d504fb9cbd65ca5e2fa37fd1cc324"
+  integrity sha512-oB8MJeMh+7LWyaSGRAPPcw6mVfqy+8XP3BgLGrMVFisAhBpAzNgvOrKIzdtbJybRXd25Xt1A6lNglmyg0dYbyg==
+  dependencies:
+    lodash.throttle "^4.1.1"
+
 "@vuepress/plugin-active-header-links@^1.0.0-alpha.30":
   version "1.0.0-alpha.30"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-active-header-links/-/plugin-active-header-links-1.0.0-alpha.30.tgz#9e0060dfd6d65a93b6b04c7c8d6fda8709e26ca2"
@@ -940,6 +947,11 @@
   dependencies:
     "@vuepress/shared-utils" "^1.0.0-alpha.30"
 
+"@vuepress/plugin-search@^1.0.0-alpha.0":
+  version "1.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-1.0.0-alpha.0.tgz#9faf04047d03a16f0bb5d98bee0df3435e3c8c58"
+  integrity sha512-FELGWmLIG8GX8MlMGRDfqiQiHnq6MC122H/d033inQ5X1hhVI1lIOoHIFd8gecgx/jaCZSnKx9oKU3ZvnDd0Cw==
+
 "@vuepress/plugin-search@^1.0.0-alpha.30":
   version "1.0.0-alpha.30"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-1.0.0-alpha.30.tgz#3ece9654b139de75efdc5f5dcd84bcb39073baaa"
@@ -957,6 +969,18 @@
     globby "^8.0.1"
     hash-sum "^1.0.2"
     upath "^1.1.0"
+
+"@vuepress/theme-default@^1.0.0-alpha.0":
+  version "1.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/theme-default/-/theme-default-1.0.0-alpha.0.tgz#346e8e632b9dd99867aab77b8531ae114e237c3b"
+  integrity sha512-/C5mOG/vl7/trIxtBZh+smRPuWOmr1bSVayFq7HrTJEh1e2nLEU3wwujWcDUzwX3IYXywFXEV5qixKmFt/GZnw==
+  dependencies:
+    "@vuepress/plugin-active-header-links" "^1.0.0-alpha.0"
+    "@vuepress/plugin-search" "^1.0.0-alpha.0"
+    docsearch.js "^2.5.2"
+    nprogress "^0.2.0"
+    stylus "^0.54.5"
+    stylus-loader "^3.0.2"
 
 "@vuepress/theme-default@^1.0.0-alpha.30":
   version "1.0.0-alpha.30"

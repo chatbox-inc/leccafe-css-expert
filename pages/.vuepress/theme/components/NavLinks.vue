@@ -18,13 +18,6 @@
         :item="item"
       />
     </div>
-    <div class="nav-item">
-      <a v-if="$store.state.user" class="nav-link">
-        <img class="nav-item-avatar" :src="$store.state.user.image" alt="">
-        {{$store.state.user.name}}
-      </a>
-      <a v-else @click="$store.dispatch('LOGIN')">ログイン</a>
-    </div>
 
     <!-- repo link -->
     <a
@@ -42,7 +35,7 @@
 
 <script>
 import DropdownLink from './DropdownLink.vue'
-import { resolveNavLinkItem } from '../util'
+import { resolveNavLinkItem } from '../layouts/util'
 import NavLink from './NavLink.vue'
 
 export default {
@@ -123,6 +116,8 @@ export default {
 </script>
 
 <style lang="stylus">
+@import '~@app/style/config'
+
 .nav-links
   display inline-block
   a
@@ -139,10 +134,6 @@ export default {
       margin-left 0
   .repo-link
     margin-left 1.5rem
-
-.nav-item-avatar
-  height 1em
-  width 1em
 
 @media (max-width: $MQMobile)
   .nav-links

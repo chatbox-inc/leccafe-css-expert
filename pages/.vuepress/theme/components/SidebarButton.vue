@@ -7,8 +7,9 @@
 </template>
 
 <style lang="stylus">
+@import '~@app/style/config'
+
 .sidebar-button
-  cursor pointer
   display none
   width 1.25rem
   height 1.25rem

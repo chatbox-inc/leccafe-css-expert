@@ -29,7 +29,14 @@
       />
     </Sidebar>
 
-    <Home v-if="$page.frontmatter.home"/>
+    <div
+      class="custom-layout"
+      v-if="$page.frontmatter.layout"
+    >
+      <component :is="$page.frontmatter.layout"/>
+    </div>
+
+    <Home v-else-if="$page.frontmatter.home"/>
 
     <Page
       v-else
@@ -50,11 +57,11 @@
 <script>
 import Vue from 'vue'
 import nprogress from 'nprogress'
-import Home from '@vuepress/theme-default/components/Home.vue'
-import Navbar from '@vuepress/theme-default/components/Navbar.vue'
-import Page from '@vuepress/theme-default/components/Page.vue'
-import Sidebar from '@vuepress/theme-default/components/Sidebar.vue'
-import { resolveSidebarItems } from '../util'
+import Home from '../components/Home.vue'
+import Navbar from '../components/Navbar.vue'
+import Page from '../components/Page.vue'
+import Sidebar from '../components/Sidebar.vue'
+import { resolveSidebarItems } from './util'
 
 export default {
   components: { Home, Page, Sidebar, Navbar },
@@ -86,6 +93,7 @@ export default {
     shouldShowSidebar () {
       const { frontmatter } = this.$page
       return (
+        !frontmatter.layout &&
         !frontmatter.home &&
         frontmatter.sidebar !== false &&
         this.sidebarItems.length
@@ -115,7 +123,8 @@ export default {
   },
 
   mounted () {
-    this.$store.dispatch("INIT_POSTS")
+    window.addEventListener('scroll', this.onScroll)
+
     // configure progress bar
     nprogress.configure({ showSpinner: false })
 

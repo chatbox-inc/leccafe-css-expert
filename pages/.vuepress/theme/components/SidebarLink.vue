@@ -1,5 +1,5 @@
 <script>
-import { isActive, hashRE, groupHeaders } from '../util'
+import { isActive, hashRE, groupHeaders } from '../layouts/util'
 
 export default {
   functional: true,
@@ -59,6 +59,8 @@ function renderChildren (h, children, path, route, maxDepth, depth = 1) {
 </script>
 
 <style lang="stylus">
+@import '~@app/style/config'
+
 .sidebar .sidebar-sub-headers
   padding-left 1rem
   font-size 0.95em
