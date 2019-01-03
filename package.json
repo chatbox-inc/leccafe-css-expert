@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vuepress dev pages -c .cache",
-    "build": "vuepress build pages -c .cache"
+    "build": "vuepress build pages -c .cache --debug"
   },
   "workspaces": [
     "packages/*"
