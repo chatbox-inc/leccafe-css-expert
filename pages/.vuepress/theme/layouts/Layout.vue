@@ -51,6 +51,7 @@
         slot="bottom"
       />
     </Page>
+    <Contact/>
   </div>
 </template>
 
@@ -62,9 +63,10 @@ import Navbar from '../components/Navbar.vue'
 import Page from '../components/Page.vue'
 import Sidebar from '../components/Sidebar.vue'
 import { resolveSidebarItems } from './util'
+import Contact from '../components/ContactBar.vue'
 
 export default {
-  components: { Home, Page, Sidebar, Navbar },
+  components: { Home, Page, Sidebar, Navbar, Contact },
 
   data () {
     return {
