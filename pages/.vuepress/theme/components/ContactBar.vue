@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section>
+        <section :class="contactClass">
             <div class="nob">
                 <a @click="togglePanel" tabindex="">修正を提案</a>
             </div>
@@ -15,6 +15,7 @@
                         <label>Message: </label>
                     </div>
                     <textarea name="message"></textarea>
+                    <input type="text" name="url" v-model="href">
                     <div>
                         <button type="submit">Send</button>
                     </div>
