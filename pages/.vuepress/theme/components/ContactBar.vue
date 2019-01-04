@@ -24,7 +24,6 @@
 
 <script>
 export default {
-    name: "ContactBar",
     data() {
         return {
             active: false,

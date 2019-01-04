@@ -50,7 +50,7 @@
         name="page-bottom"
         slot="bottom"
       >
-        <ContactBar/>
+        <contact-bar />
       </slot>
     </Page>
   </div>
