@@ -6,7 +6,6 @@
 
 <script>
 export default {
-    name: "ContactBar",
     data() {
         return {
             active: false,
@@ -37,7 +36,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="css" scoped>
 .contact {
     position: fixed;
     display: flex;
