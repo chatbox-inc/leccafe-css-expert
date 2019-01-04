@@ -15,7 +15,7 @@
                         <label>Message: </label>
                     </div>
                     <textarea name="message"></textarea>
-                    <input type="text" name="url" v-model="href">
+                    <input type="hidden" name="url" v-model="href">
                     <div>
                         <button type="submit">Send</button>
                     </div>
@@ -35,8 +35,7 @@ export default {
     },
     watch:{
         "$route": function(to, from){
-            console.log(to,from,this)
-            // this.href = location.href;
+            this.href = location.href;
         }
     },
     computed: {
@@ -48,7 +47,7 @@ export default {
         },
     },
     mounted(){
-        // this.href = location.href;
+        this.href = location.href;
     },
     methods:{
         togglePanel(){
