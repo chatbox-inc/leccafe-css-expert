@@ -13,6 +13,7 @@
                     <label>Message: </label>
                 </p>
                 <textarea name="message"></textarea>
+                <input type="hidden" name="href" v-model="href"/>
                 <p>
                     <button type="submit">Send</button>
                 </p>
