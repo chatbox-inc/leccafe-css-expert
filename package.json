@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/lec-cafe/book_jquery#readme",
   "dependencies": {
-    "lru-cache": "^5.1.1",
+    "lru-cache": "4",
     "vuepress": "^1.0.0-alpha.30"
   },
   "devDependencies": {
