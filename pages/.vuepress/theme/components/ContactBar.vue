@@ -4,6 +4,12 @@
             <div class="nob">
                 <a @click="togglePanel" tabindex="">修正を提案</a>
             </div>
+            <div class="form">
+                <p>
+                    ドキュメントに不明な点、タイポ等があればお気軽にご連絡ください。
+                    ご連絡頂いた内容をもとにドキュメントの内容を修正させていただきます。
+                </p>
+            </div>
         </section>
     </div>
 </template>
