@@ -9,7 +9,7 @@
                     ドキュメントに不明な点、タイポ等があればお気軽にご連絡ください。
                     ご連絡頂いた内容をもとにドキュメントの内容を修正させていただきます。
                 </p>
-                <form name="contact" method="POST" data-netlify="true">
+                <div name="contact" method="POST" data-netlify="true">
                     <div>
                         <label>Message: </label>
                     </div>
@@ -17,7 +17,7 @@
                     <div>
                         <button type="submit">Send</button>
                     </div>
-                </form>
+                </div>
             </div>
         </section>
     </div>
