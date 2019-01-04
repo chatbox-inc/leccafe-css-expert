@@ -13,7 +13,6 @@
                     <label>Message: </label>
                 </p>
                 <textarea name="message"></textarea>
-                <input type="hidden" name="href" :value="href">
                 <p>
                     <button type="submit">Send</button>
                 </p>
