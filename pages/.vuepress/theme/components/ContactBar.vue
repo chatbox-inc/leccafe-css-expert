@@ -1,24 +1,6 @@
 <template>
-    <section :class="contactClass">
-        <div class="nob">
-            <a @click="togglePanel" tabindex="">修正を提案</a>
-        </div>
-        <div class="form">
-            <p>
-                ドキュメントに不明な点、タイポ等があればお気軽にご連絡ください。
-                ご連絡頂いた内容をもとにドキュメントの内容を修正させていただきます。
-            </p>
-            <form name="contact" method="POST" data-netlify="true">
-                <p>
-                    <label>Message: </label>
-                </p>
-                <textarea name="message"></textarea>
-                <input type="hidden" name="href" v-model="href">
-                <p>
-                    <button type="submit">Send</button>
-                </p>
-            </form>
-        </div>
+    <section>
+        hello
     </section>
 </template>
 
