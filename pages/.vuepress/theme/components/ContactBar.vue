@@ -10,6 +10,7 @@
                     ご連絡頂いた内容をもとにドキュメントの内容を修正させていただきます。
                 </p>
                 <form name="contact" method="POST" data-netlify="true">
+                    <input type='hidden' name='form-name' value='contact'>
                     <div>
                         <label>Message: </label>
                     </div>
