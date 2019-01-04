@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section :class="contactClass">
+        <section>
             <div class="nob">
                 <a @click="togglePanel" tabindex="">修正を提案</a>
             </div>
