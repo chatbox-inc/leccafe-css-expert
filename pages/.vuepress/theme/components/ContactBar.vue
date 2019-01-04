@@ -14,7 +14,7 @@
                     <div>
                         <label>Message: </label>
                     </div>
-                    <textarea name="message"></textarea>
+                    <textarea name="message" rows="5"></textarea>
                     <input type="hidden" name="url" v-model="href">
                     <div>
                         <button type="submit">Send</button>
@@ -74,7 +74,10 @@ export default {
 .contact .nob{
     width: 9rem;
     height: 2rem;
-    background: #cccccc;
+    border: 2px #ccc solid;
+    border-bottom: 2px  #FFF solid;
+    background: #FFF;
+    /*background: #cccccc;*/
     border-radius: 10px 10px 0 0;
 }
 
@@ -82,12 +85,13 @@ export default {
     display: none;
     width: 100%;
     height: 100%;
-    background: #cccccc;
+    border: 2px #ccc solid;
+    background: #FFF;
     overflow: hidden;
 }
 
 .contact.active {
-    width: 20rem;
+    width: 30rem;
     height: 20rem;
 }
 .contact.active .form{
