@@ -58,7 +58,7 @@
     </div>
 
     <slot name="bottom"/>
-    <!--<ContactBar/>-->
+    <ContactBar/>
   </div>
 </template>
 
