@@ -26,6 +26,7 @@
     "vuepress": "^1.0.0-alpha.30"
   },
   "devDependencies": {
+    "markdown-it-playground": "^0.0.5",
     "yarn": "^1.12.3"
   }
 }
