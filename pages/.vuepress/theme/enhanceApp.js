@@ -48,7 +48,7 @@ export default ({
     // })
     //
     async function afterEach(to, from, next) {
-        if(f (typeof(document) != "undefined")){
+        if(typeof(document) != "undefined"){
             var script = document.createElement('script');
             script.src = 'https://static.codepen.io/assets/embed/ei.js';
             document.body.appendChild(script);
