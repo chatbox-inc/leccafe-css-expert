@@ -63,9 +63,11 @@
 
 <script>
 import { resolvePage, normalize, outboundRE, endingSlashRE } from '../layouts/util'
+import ContactBar from "./ContactBar"
 
 export default {
   props: ['sidebarItems'],
+  components: {ContactBar},
 
   computed: {
     lastUpdated () {

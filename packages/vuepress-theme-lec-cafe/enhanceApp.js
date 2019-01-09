@@ -47,9 +47,14 @@ export default ({
     //     store
     // })
     //
-    // async function afterEach(to, from, next) {
-    //
-    // }
-    // router.afterEach(afterEach)
+    async function afterEach(to, from, next) {
+        if(typeof(document) != "undefined"){
+            var script = document.createElement('script');
+            script.src = 'https://static.codepen.io/assets/embed/ei.js';
+            document.body.appendChild(script);
+            script.remove()
+        }
+    }
+    router.afterEach(afterEach)
 
 }

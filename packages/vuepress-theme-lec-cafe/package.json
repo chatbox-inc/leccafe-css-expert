@@ -1,33 +1,11 @@
 {
   "name": "vuepress-theme-lec-cafe",
-  "version": "1.0.0-alpha.30",
+  "version": "0.0.1",
   "description": "Default theme for VuePress",
   "main": "index.js",
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vuejs/vuepress.git"
-  },
-  "keywords": [
-    "documentation",
-    "vue",
-    "vuepress",
-    "generator"
-  ],
-  "author": "Evan You",
-  "maintainers": [
-    {
-      "name": "ULIVZ",
-      "email": "chl814@foxmail.com"
-    }
-  ],
+  "keywords": [],
+  "author": "mikakane",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vuejs/vuepress/issues"
-  },
-  "homepage": "https://github.com/vuejs/vuepress/packages/@vuepress/theme-default#readme",
   "dependencies": {
     "@vuepress/plugin-active-header-links": "^1.0.0-alpha.30",
     "@vuepress/plugin-search": "^1.0.0-alpha.30",
@@ -39,6 +17,5 @@
     "stylus-loader": "^3.0.2",
     "vuex": "^3.0.1",
     "vuexfire": "2"
-  },
-  "gitHead": "ffde326ee0104d998e9e583e2c785625ab37f1dc"
+  }
 }

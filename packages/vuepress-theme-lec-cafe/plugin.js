@@ -7,11 +7,12 @@ module.exports = (options, context) => ({
     const { themeConfig, siteConfig } = context
 
     // resolve algolia
-    const isAlgoliaSearch = (
-      themeConfig.algolia ||
-      Object.keys(siteConfig.locales && themeConfig.locales || {})
-        .some(base => themeConfig.locales[base].algolia)
-    )
+    // const isAlgoliaSearch = (
+    //   themeConfig.algolia ||
+    //   Object.keys(siteConfig.locales && themeConfig.locales || {})
+    //     .some(base => themeConfig.locales[base].algolia)
+    // )
+    const isAlgoliaSearch = false
 
     config.resolve
       .alias

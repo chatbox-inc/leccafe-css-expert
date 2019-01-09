@@ -88,6 +88,29 @@ export default {
     border: 2px #ccc solid;
     background: #FFF;
     overflow: hidden;
+    text-align: left;
+    padding: 0 1em;
+}
+
+.contact .form p {
+    font-size: .9em;
+}
+
+.contact .form label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.contact .form textarea {
+    width: 90%;
+    font-size: .9em;
+}
+
+.contact .form button {
+    padding: 5px 1em;
+    font-size: .9em;
+    background: white;
+
 }
 
 .contact.active {
