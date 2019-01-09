@@ -48,10 +48,12 @@ export default ({
     // })
     //
     async function afterEach(to, from, next) {
-        var script = document.createElement('script');
-        script.src = 'https://static.codepen.io/assets/embed/ei.js';
-        document.body.appendChild(script);
-        script.remove()
+        if(f (typeof(document) != "undefined")){
+            var script = document.createElement('script');
+            script.src = 'https://static.codepen.io/assets/embed/ei.js';
+            document.body.appendChild(script);
+            script.remove()
+        }
     }
     router.afterEach(afterEach)
 
